@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Unitwise PDFs | Rohith_2k2</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body and Container Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    animation: backgroundAnimation 10s ease-in-out infinite;
+}
+
+.container {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 2s forwards, slideInFromTop 1.5s ease-out forwards;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    color: #777;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 3s forwards, slideInFromBottom 1.5s ease-out forwards;
+}
+
+.highlight {
+    color: #FF6347; /* Tomato red */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Animation for header text */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Animation for the background */
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #f0f0f0;
+    }
+    50% {
+        background-color: #fffbf0;
+    }
+    100% {
+        background-color: #f0f0f0;
+    }
+}
+
+/* Subject Section Styles */
+.subjects {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.subject {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.subject:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.subject h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.subject ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.subject ul li {
+    margin: 10px 0;
+}
+
+.subject ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.subject ul li a:hover {
+    color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+    margin-top: 50px;
+    font-size: 1.2rem;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 2s 2s forwards;
+}
+
+.footer span {
+    font-weight: bold;
+    color: #FF6347;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .sub-heading {
+        font-size: 1.2rem;
+    }
+
+    .subject {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .sub-heading {
+        font-size: 1rem;
+    }
+
+    .subject {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .subject h2 {
+        font-size: 1.5rem;
+    }
+
+    .subject ul li a {
+        font-size: 1rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="animated-text">Welcome to the Download Center of <span class="highlight">Rohith_2k2</span></h1>
+            <p class="sub-heading">Download subject unit-wise PDFs easily with a smooth experience!</p>
+        </header>
+
+        <section class="subjects">
+            <div class="subject subject1">
+                <h2>PPS</h2>
+                <ul>
+                    <li><a href="ppsunit1" download>Unit 1</a></li>
+                    <li><a href="PPS UNIT-3.pdf" download>Unit 3</a></li>
+                    <li><a href="PPS UNIT-5.pdf" download>Unit 5</a></li>
+                    <li><a href="path-to-pdf/maths_unit4.pdf" download>Unit 4</a></li>
+                </ul>
+            </div>
+
+            <div class="subject subject2">
+                <h2>MATHS</h2>
+                <ul>
+                    <li><a href="path-to-pdf/physics_unit1.pdf" download>Unit 1: Mechanics</a></li>
+                    <li><a href="path-to-pdf/physics_unit2.pdf" download>Unit 2: Thermodynamics</a></li>
+                    <li><a href="path-to-pdf/physics_unit3.pdf" download>Unit 3: Electromagnetism</a></li>
+                    <li><a href="path-to-pdf/physics_unit4.pdf" download>Unit 4: Optics</a></li>
+                </ul>
+            </div>
+
+            <div class="subject subject3">
+                <h2>Chemistry</h2>
+                <ul>
+                    <li><a href="path-to-pdf/chemistry_unit1.pdf" download>Unit 1: Organic Chemistry</a></li>
+                    <li><a href="path-to-pdf/chemistry_unit2.pdf" download>Unit 2: Inorganic Chemistry</a></li>
+                    <li><a href="path-to-pdf/chemistry_unit3.pdf" download>Unit 3: Physical Chemistry</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Created by <span class="highlight">Rohith_2k2</span> with 💖</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
